@@ -1,0 +1,152 @@
+body, html {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100%;
+  margin: 0;
+  background-color: hsl(30, 38%, 92%);
+}
+
+main {
+  display: grid;
+  grid-template-columns: 300px 300px;
+}
+
+.picture {
+  width: 300px;
+  border-radius: 8px 0 0 8px;
+}
+
+.mobile-picture {
+  display: none;
+}
+
+.right-section {
+  background-color: white;
+  border-radius: 0 8px 8px 0;
+  padding: 30px 30px 0 30px;
+}
+
+h1, p {
+  margin: 0;
+}
+
+.category {
+  font-family: montserrat, arial;
+  font-size: 12px;
+  letter-spacing: 5px;
+  color: hsl(228, 12%, 48%);
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-family: fraunces, arial;
+  font-weight: 700;
+  font-size: 31px;
+  color: hsl(212, 21%, 14%);
+  line-height: 32px;
+  margin-bottom: 26px;
+  word-spacing: -1px;
+}
+
+.description {
+  font-family: montserrat, arial;
+  font-size: 14px;
+  color: hsl(228, 12%, 48%);
+  line-height: 22px;
+  margin-bottom: 28px;
+}
+
+.price {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.new-price {
+  font-family: fraunces, arial;
+  font-weight: 700;
+  font-size: 31px;
+  color: hsl(158, 36%, 37%);
+  margin-right: 24px;
+}
+
+.old-price {
+  font-family: montserrat, arial;
+  color: hsl(228, 12%, 48%);
+  text-decoration: line-through;
+  font-size: 13px;
+}
+
+.button-container {
+  position: relative;
+}
+
+.add-button {
+  width: 236px;
+  height: 48px;
+  background-color: hsl(158, 36%, 37%);
+  border: none;
+  border-radius: 8px;
+  font-family: montserrat, arial;
+  font-weight: 700;
+  font-size: 14px;
+  color: white;
+  margin-top: 28px;
+  padding-left: 34px;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+.add-button:hover {
+  background-color: hsl(158, 45%, 16%);
+}
+
+.cart-icon {
+  position: absolute;
+  top: 44px;
+  left: 64px;
+}
+
+@media (max-width: 481px) {
+  
+  main {
+    grid-template-columns: 350px;
+  }
+
+  .picture {
+    display: none;
+  }
+
+  .mobile-picture {
+    display: block;
+    width: 350px;
+    border-radius: 8px 8px 0 0;
+  }
+
+  .right-section {
+    border-radius: 0 0 8px 8px;
+    height: 370px;
+  }
+
+  h1 {
+    margin-bottom: 20px;
+  }
+
+  .description {
+    font-size: 12px;
+  }
+
+  .add-button {
+    width: 290px;
+  }
+
+  .add-button:active {
+    background-color: hsl(158, 45%, 16%);
+  }
+
+  .cart-icon {
+    left: 90px
+  }
+}
